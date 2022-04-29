@@ -46,6 +46,8 @@ ul {
   outline: 2px solid tomato;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h1,
@@ -99,6 +101,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  margin-right: 93px;
 }
 
 .logo span {
@@ -112,6 +116,10 @@ img {
 }
 
 /* site-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 .site-nav .link {
   color: var(--secondary-text-color);
@@ -120,6 +128,9 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -128,6 +139,14 @@ img {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav li:not(:last-child) {
+margin-right: 50px;
 }
 
 /* auth-nav */
@@ -139,12 +158,26 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav li+li {
+  margin-left: 50px;
+}
+
+.flex-nav{
+  display: flex;
+  align-items: center;
+}
 /* hero */
 
 .hero {
@@ -164,7 +197,6 @@ img {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  outline: 2px solid tomato;
 }
 
 .hero button {
