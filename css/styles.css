@@ -157,6 +157,9 @@ margin-right: 50px;
 .flex-nav{
   display: flex;
   align-items: center;
+}
+
+header {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -193,8 +196,6 @@ margin-right: 50px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-right: 452px;
-  padding-left: 452px;
 }
 
 .hero-title {
@@ -321,7 +322,9 @@ margin-right: 50px;
   text-align: center;
 }
 
-.team-list li p {
+
+.name-profession {
+  /* padding-left???: ; */
   padding-bottom: 30px;
 }
 
@@ -449,7 +452,6 @@ margin-bottom: 50px;
   margin-bottom: 30px;
   background-color: var(--white-color);
   padding-bottom: 20px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery li:nth-last-child(-n + 3) {
@@ -463,8 +465,6 @@ margin-bottom: 50px;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   margin-bottom: 4px;
-   padding-right: 24px;
-  padding-left: 24px;
 }
 
 .gallery p {
@@ -472,10 +472,14 @@ margin-bottom: 50px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-   padding-right: 24px;
-  padding-left: 24px;
 }
 
-.gallery li img {
-  margin-bottom: 20px;
+.for-borders {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
